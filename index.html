@@ -10,141 +10,87 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
 <style>
-
-  
-    body{
-        margin: 0;
-        font-family: 'Roboto Mono', monospace;
-        color: white;
-        background: #202731;
-
-    }
-
-    section {
-        position: relatve;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-    }
-    .gradient-text {
-    background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    }
-    .rainbow-text {
-  /* Create a conic gradient. */
-  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background: #CA4246;
-  background-color: #CA4246;
-  font-size: 301px;
-  background: conic-gradient(
- 
-   
-    #5c4c48 33.333%, 
-    #F18F43 33.333%, 
-    #e4690c 50%, 
-    #8B9862 50%, 
-    #8B9862 66.666%, 
-    #476098 66.666%, 
-    #476098 83.333%, 
-    #b390ae 83.333%);
-  
-  /* Set thee background size and repeat properties. */
-  background-size: 57%;
-  background-repeat: repeat;
-  
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: rainbow-text-animation-rev 0.5s ease forwards;
-
-  cursor: pointer;
-}
-
-/* Add animation on hover. */
-.rainbow-text:hover {
-  animation: rainbow-text-animation 0.5s ease forwards;
-}
-
-/* Move the background and make it larger. */
-/* Animation shown when hovering over the text. */
-@keyframes rainbow-text-animation {
-  0% {
-    background-size: 57%;
-    background-position: 0 0;
-  }
-  20% {
-    background-size: 57%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 300%;
-    background-position: -9em 1em;
-  }
-}
-
-/* Move the background and make it smaller. */
-/* Animation shown when entering the page and after the hover animation. */
-@keyframes rainbow-text-animation-rev {
-  0% {
-    background-size: 300%;
-    background-position: -9em 1em;
-  }
-  20% {
-    background-size: 57%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 57%;
-    background-position: 0 0;
-  }
-  big-text{
-   
-    font-size: 300px;
-  }
+  body{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background: #202731;
 
 }
 
+#Title {
+    justify-content: center;
+    font-size: 100px;
+    background: #202731;
+    margin-top: 300px;
+    padding: 0;
+    color: #8FCB9B;
+}
+
+#Title_para {
+    font-size: 20px;
+    margin-bottom: 250px;
+}
+
+.Title_of_para {
+     color: #8FCB9B;
+}
 </style>
 </head>
 <body>
+
+  <!--TITLE-->
+    <header >
+        <h1 id="Title">Polan</h1>
+        <p id="Title_para">polan is the only open source voice assistant that works on windows *android and linux later*</p>
+    </header>
+
+  
+  <!--Privacy-->
     <section>
-        <h1 class='rainbow-text' >Polan</h1>
-        
-    </section>
-    <section>
-      
-        <p>polan is the only open source voice assistant that works on windows *android and linux later*</p>
-    </section>
-    <section>
-        <h1 >respects your privacy <span class="material-symbols-outlined">
+        <h1 class="Title_of_para">respects your privacy <span class="material-symbols-outlined">
             security
             </span></h1>
         <p>polan does not sell or store your voice into any database, you can take a look at polan's codebase,it doesnt send or ping any server that stores your voice</p>
     </section>
+
+
+  <!--C#, Flutter and Python-->
     <section>
-        <h1 >built in C#,flutter and python <span class="material-symbols-outlined">
+        <h1 class="Title_of_para">built in C#,flutter and python <span class="material-symbols-outlined">
             code_blocks
             </span> </h1>
         <p class="big-text">C# is the most stable and fast language we choose, we're going to use flutter and python for the incoming mobile version</p>
     </section>
+
+
+  <!--Comunity-->
     <section>
-        <h1>build by the community, for the community</h1>
+        <h1 class="Title_of_para">build by the community, for the community</h1>
         <p>this project by a community that cares about competing with closed-source corporate software that cannot be trusted </p>
     </section>
+
+
+  <!--Contribution-->
     <section>
-        <h1>contribute for better FOSS</h1>
+        <h1 class="Title_of_para">contribute for better FOSS</h1>
         <p>you can contribute by writing code, reporting bugs, donating to any FOSS contribiouters , we unfortunatly dont accept any kind of currency</p>
     </section>
+
+
+  <!--Empty-->
     <section>
-        <h1 >nice sus</h1>
+        <h1 class="Title_of_para">nice sus</h1>
         <p>Labore qui quos ratione quia? Quae aut maxime reiciendis dolor ipsa? Dolor temporibus facere reprehenderit qui. Cumque nam, maiores, dolore impedit sed praesentium velit in laudantium ad at eum officiis!</p>
     </section>
+
+
+  <!--Empty-->
     <section>
-        <h1>nice sus</h1>
+        <h1 class="Title_of_para">nice sus</h1>
         <p>Mollitia magni, quisquam laudantium quos asperiores dolore odio autem quae accusantium quas. Quam non maxime recusandae eos, dolore perferendis, ipsum quasi, culpa perspiciatis iusto molestias cupiditate ea unde ducimus libero.</p>
     </section>
 </body>
