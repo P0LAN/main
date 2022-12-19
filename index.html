@@ -11,13 +11,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
 <style>
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body{
     text-align: center;
     align-items: center;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
-    color: white;
     background: #202731;
 
 }
@@ -35,7 +39,7 @@
 
 #Title_para {
     font-size: 20px;
-    margin-bottom: 250px;
+    margin-bottom: 400px;
 }
 
 .Title_of_para {
@@ -112,25 +116,45 @@ li a:hover {
   background-color: black;
   color: white;
 }
+
+#Privacy_para {
+  margin-bottom: 400px;
+}
+
+#Language_para {
+  margin-bottom: 400px;
+}
+
+#Community_para {
+  margin-bottom: 400px;
+}
+
+#Contribution_para {
+  margin-bottom: 400px;
+}
+
 </style>
 </head>
 <body>
 
-
+  <div>
 
       <!--Navbar-->
       <ul>
-        <li><a href="" id="Title_navbar">Polan</a></li>
-        <li><a href="" class="Navbar">Privacy</a></li>
-        <li><a href="" class="Navbar">Languages</a></li>
-        <li><a href="" class="Navbar">Comunity</a></li>
-        <li><a href="" class="Navbar">Contribution</a></li>
+        <li><a href="#Title_Link" id="Title_navbar">Polan</a></li>
+        <li><a href="#Title_para" class="Navbar">Privacy</a></li>
+        <li><a href="#Privacy_para" class="Navbar">Languages</a></li>
+        <li><a href="#Language_para" class="Navbar">Community</a></li>
+        <li><a href="#Community_para" class="Navbar">Contribution</a></li>
       </ul>
 
 
 
 
   <!--TITLE-->
+
+      <h1 id="Title_Link">.</h1>
+
     <header >
         <h1 id="Title">Polan</h1>
         <p id="Title_para">polan is the only open source voice assistant that works on windows *android and linux later*</p>
@@ -138,46 +162,55 @@ li a:hover {
 
   
   <!--Privacy-->
+
     <section>
-        <h1 class="Title_of_para">respects your privacy <span class="material-symbols-outlined">
+        <h1 class="Title_of_para" id="Privacy">respects your privacy <span class="material-symbols-outlined">
             security
             </span></h1>
-        <p>polan does not sell or store your voice into any database, you can take a look at polan's codebase,it doesnt send or ping any server that stores your voice</p>
+        <p id="Privacy_para">polan does not sell or store your voice into any database, you can take a look at polan's codebase,it doesnt send or ping any server that stores your voice</p>
     </section>
 
 
   <!--C#, Flutter and Python-->
+
+
+
     <section>
-        <h1 class="Title_of_para">built in C#,flutter and python <span class="material-symbols-outlined">
+        <h1 class="Title_of_para" id="Languages">built in C#,flutter and python <span class="material-symbols-outlined">
             code_blocks
             </span> </h1>
-        <p class="big-text">C# is the most stable and fast language we choose, we're going to use flutter and python for the incoming mobile version</p>
+        <p id="Language_para">C# is the most stable and fast language we choose, we're going to use flutter and python for the incoming mobile version</p>
     </section>
 
 
   <!--Comunity-->
+
+
+
     <section>
-        <h1 class="Title_of_para">build by the community, for the community</h1>
-        <p>this project by a community that cares about competing with closed-source corporate software that cannot be trusted </p>
+        <h1 class="Title_of_para" id="Comunity">build by the community, for the community</h1>
+        <p id="Community_para">this project by a community that cares about competing with closed-source corporate software that cannot be trusted </p>
     </section>
 
 
   <!--Contribution-->
+
+
+
     <section>
-        <h1 class="Title_of_para">contribute for better FOSS</h1>
-        <p>you can contribute by writing code, reporting bugs, donating to any FOSS contribiouters , we unfortunatly dont accept any kind of currency</p>
+        <h1 class="Title_of_para" id="Contribution">contribute for better FOSS</h1>
+        <p id="Contribution_para">you can contribute by writing code, reporting bugs, donating to any FOSS contribiouters , we unfortunatly dont accept any kind of currency</p>
     </section>
 
 
   <!--Empty-->
     <section>
         <h1 class="Title_of_para">nice sus</h1>
-        <p>Labore qui quos ratione quia? Quae aut maxime reiciendis dolor ipsa? Dolor temporibus facere reprehenderit qui. Cumque nam, maiores, dolore impedit sed praesentium velit in laudantium ad at eum officiis!</p>
+        <p>Mollitia magni, quisquam laudantium quos asperiores dolore odio autem quae accusantium quas. Quam non maxime recusandae eos, dolore perferendis, ipsum quasi, culpa perspiciatis iusto molestias cupiditate ea unde ducimus libero.</p>
     </section>
 
-
-  <!--Empty-->
-    <section>
+      <!--Empty-->
+      <section>
         <h1 class="Title_of_para">nice sus</h1>
         <p>Mollitia magni, quisquam laudantium quos asperiores dolore odio autem quae accusantium quas. Quam non maxime recusandae eos, dolore perferendis, ipsum quasi, culpa perspiciatis iusto molestias cupiditate ea unde ducimus libero.</p>
     </section>
