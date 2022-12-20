@@ -77,6 +77,12 @@ header a {
 }
 
 header {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 9999; 
+  width: 100%; 
+  height: 100px;
   padding: 0 20px;
   background-color: #202731;
   display: flex;
@@ -84,9 +90,9 @@ header {
 }
 
 #brand {
+  margin: 10px;
   font-weight: bold;
   font-size: 30px;
-  display: flex;
   align-items: center;
 }
 
@@ -103,6 +109,7 @@ ul {
 }
 
 ul a {
+  margin-right: 20px;
   color: white;
 }
 
@@ -126,20 +133,12 @@ ul li:hover {
 
 }
 
-#signup {
-
-}
-
-#signup a {
-
-}
-
 #login a {
  
 }
 
 #hamburger-icon {
-  margin: auto 0;
+  margin-right: 30px;
   display: none;
   cursor: pointer;
 }
@@ -205,13 +204,13 @@ ul li:hover {
 
       <!--Navbar-->
       <header>
-        <div id="brand"><a href="/">Polan</a></div>
+        <div id="brand"><a href="#Title_Link">Polan</a></div>
         <nav>
           <ul>
-            <li><a href="/home">Privacy</a></li>
-            <li><a href="/products">Languages</a></li>
-            <li><a href="/about">Comunity</a></li>
-            <li id="login"><a href="/login" >Contribution</a></li>
+            <li><a href="#Title_para">Privacy</a></li>
+            <li><a href="#Privacy_para">Languages</a></li>
+            <li><a href="#Language_para">Community</a></li>
+            <li id="login"><a href="#Community_para" >Contribution</a></li>
           </ul>
         </nav>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -219,10 +218,10 @@ ul li:hover {
           <div class="bar2"></div>
           <div class="bar3"></div>
           <ul class="mobile-menu">
-            <li><a href="/home">Privacy</a></li>
-            <li><a href="/products">Languages</a></li>
-            <li><a href="/about">Comunity</a></li>
-            <li id="login"><a href="/login" >Contribution</a></li>
+            <li><a href="#Title_para">Privacy</a></li>
+            <li><a href="#privacy_para">Languages</a></li>
+            <li><a href="#Language_para">Comunity</a></li>
+            <li id="login"><a href="#Comunity_para" >Contribution</a></li>
           </ul>
         </div>
       </header>
@@ -231,7 +230,7 @@ ul li:hover {
 
   <!--TITLE-->
 
-      <h1 id="Title_Link"></h1>
+      <h1 id="Title_Link">.</h1>
 
     <section >
         <h1 id="Title">Polan</h1>
