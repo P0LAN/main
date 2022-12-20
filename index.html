@@ -23,7 +23,7 @@
     padding: 0;
     font-family: 'Roboto Mono', monospace;
     background: #202731;
-
+    color: white;
 }
 
 
@@ -47,134 +47,6 @@
 }
 
 
-#Title_navbar {
-  text-decoration: none;
-  font-size: 30px;
-  align-content: left;
-  margin: 10px 0px 10px 10px;
-  color: #8FCB9B;
-}
-
-.container {
-  font-family: arial;
-  font-size: 24px;
-  margin: 25px;
-  width: 350px;
-  height: 200px;
- 
-}
-
-.child {
-  width: 50px;
-  height: 50px;
-
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
-}
-
-
-
-ul {
-  top: 0; 
-  left: 0; 
-  z-index: 9999; 
-  width: 100%; 
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #202731;
-}
-
-.Navbar {
-  margin: 20px 0px 10px 10px;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  background-color: #202731;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  opacity: 0.6;
-  transition: 0.3s;
-}
-
-li a:hover {
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-}
-
-
-@media (max-width: 500px) {
-
-
-  #Title_navbar {
-    text-decoration: none;
-    font-size: 20px;
-    align-content: left;
-    margin: 10px 0px 10px 10px;
-    color: #8FCB9B;
-  }
-
-
-  ul {
-    top: 0; 
-    left: 0; 
-    z-index: 9999; 
-    width: 100%; 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #202731;
-  }
-  
-  .Navbar {
-    margin: 20px 0px 10px 10px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    background-color: #202731;
-    font-size: 12px;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
-  
-  li a:hover {
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-  }
-}
-
-
-
-
 #Privacy_para {
   margin-bottom: 400px;
 }
@@ -191,6 +63,140 @@ li a:hover {
   margin-bottom: 400px;
 }
 
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #202731;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #8FCB9B;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login,
+#signup {
+
+  padding: 5px 8px;
+}
+
+#login {
+
+}
+
+#signup {
+
+}
+
+#signup a {
+
+}
+
+#login a {
+ 
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+
 </style>
 </head>
 <body>
@@ -198,25 +204,39 @@ li a:hover {
   <div>
 
       <!--Navbar-->
-      <ul>
-        <li><a href="#Title_Link" id="Title_navbar">Polan</a></li>
-        <li><a href="#Title_para" class="Navbar">Privacy</a></li>
-        <li><a href="#Privacy_para" class="Navbar">Languages</a></li>
-        <li><a href="#Language_para" class="Navbar">Community</a></li>
-        <li><a href="#Community_para" class="Navbar">Contribution</a></li>
-      </ul>
-
+      <header>
+        <div id="brand"><a href="/">Polan</a></div>
+        <nav>
+          <ul>
+            <li><a href="/home">Privacy</a></li>
+            <li><a href="/products">Languages</a></li>
+            <li><a href="/about">Comunity</a></li>
+            <li id="login"><a href="/login" >Contribution</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/home">Privacy</a></li>
+            <li><a href="/products">Languages</a></li>
+            <li><a href="/about">Comunity</a></li>
+            <li id="login"><a href="/login" >Contribution</a></li>
+          </ul>
+        </div>
+      </header>
 
 
 
   <!--TITLE-->
 
-      <h1 id="Title_Link">.</h1>
+      <h1 id="Title_Link"></h1>
 
-    <header >
+    <section >
         <h1 id="Title">Polan</h1>
         <p id="Title_para">polan is the only open source voice assistant that works on windows *android and linux later*</p>
-    </header>
+    </section>
 
   
   <!--Privacy-->
@@ -260,18 +280,7 @@ li a:hover {
         <p id="Contribution_para">you can contribute by writing code, reporting bugs, donating to any FOSS contribiouters , we unfortunatly dont accept any kind of currency</p>
     </section>
 
-
-  <!--Empty-->
-    <section>
-        <h1 class="Title_of_para">nice sus</h1>
-        <p>Mollitia magni, quisquam laudantium quos asperiores dolore odio autem quae accusantium quas. Quam non maxime recusandae eos, dolore perferendis, ipsum quasi, culpa perspiciatis iusto molestias cupiditate ea unde ducimus libero.</p>
-    </section>
-
       <!--Empty-->
-      <section>
-        <h1 class="Title_of_para">nice sus</h1>
-        <p>Mollitia magni, quisquam laudantium quos asperiores dolore odio autem quae accusantium quas. Quam non maxime recusandae eos, dolore perferendis, ipsum quasi, culpa perspiciatis iusto molestias cupiditate ea unde ducimus libero.</p>
-    </section>
     <Section>
       <footer>
   <p>visit the repo!!<br></p>
@@ -282,5 +291,13 @@ li a:hover {
 </div>
 </footer>
     </Section>
+
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle('open');
+    }
+    
+    </script>
+
 </body>
 </html>
