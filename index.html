@@ -79,7 +79,28 @@
 
 }
 
-
+.langs{
+  width: 150px;
+  background: #202731;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 12px 24px;
+}
+.a1{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  background: #204829;
+  font-weight: 650;
+  transition: .3s linear;
+  border-radius: 10%;
+}
+.a1:hover{
+  background: #82ce87;
+}
+.a1.active{
+  background: #359d4d;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
@@ -351,7 +372,17 @@ ul li:hover {
         <p id="Contribution_para">you can contribute by writing code, reporting bugs, donating to any FOSS contribiouters , we unfortunatly dont accept any kind of currency</p>
     </section>
    
+<section>
+  <div class="langs">
+    
+    <a class="a1 active" href="#" Language="English">ENG</a>
 
+    <a class="a1" href="#" Language="Turkish">TR</a>
+    <a class="a1" href="#" Language="Arabic">AR</a>
+
+
+  </div>
+</section>
       <!--Empty-->
     <Section>
       <footer>
@@ -369,6 +400,21 @@ ul li:hover {
         menu.classList.toggle('open');
     }
     
+    </script>
+    <script>
+      ver="1.2.0"
+      console.log("languages Models are still in progress!!")
+      console.log("Website ver="+ver)
+      ///language selector is still in progress!!!!
+      ///dont move or change the snippets!
+    /////  let lang = document.querySelector(".langs"),
+    //  link = document.querySelectorAll("a1"),
+      ///let data = {
+     
+       // Arabic: {
+       //   Title_of_para: "تيست يولد",
+      //  }
+//}
     </script>
 
 </body>
