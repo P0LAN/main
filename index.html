@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta charset="UTF-8">
@@ -250,7 +250,7 @@ ul li:hover {
     margin-top: 250px;
     padding: 0;
     color: #8FCB9B;
-}
+  }
 
   #Title_para {
     font-size: 20px;
@@ -274,7 +274,6 @@ ul li:hover {
   }
   
 }
-
 
 </style>
 </head>
@@ -330,10 +329,10 @@ ul li:hover {
   <!--Privacy-->
 
     <section>
-        <h1 class="Title_of_para" id="Privacy">respects your privacy <span class="material-symbols-outlined">
+        <h1 class="Title_of_para tit1" id="Privacy">respects your privacy <span class="material-symbols-outlined">
             security
             </span></h1>
-        <p id="Privacy_para">Polan keeps your Data Private and does not sell it to anyone</p>
+        <p id="Privacy_para" class="p61">Polan keeps your Data Private and does not sell it to anyone</p>
     </section>
 
 
@@ -342,10 +341,10 @@ ul li:hover {
 
 
     <section>
-        <h1 class="Title_of_para" id="Languages">Made in Python <span class="material-symbols-outlined">
+        <h1 class="Title_of_para tit2" id="Languages">Made in Python <span class="material-symbols-outlined">
             code_blocks
             </span> </h1>
-        <p id="Language_para">We chose python due to its reliability and simplicity</p>
+        <p id="Language_para" class="p62">We chose python due to its reliability and simplicity</p>
     </section>
 
 
@@ -354,10 +353,10 @@ ul li:hover {
 
 
     <section>
-        <h1 class="Title_of_para" id="Comunity">build by the community, for the community <span class="material-symbols-outlined">
+        <h1 class="Title_of_para tit3" id="Comunity">build by the community, for the community <span class="material-symbols-outlined">
             groups
             </span></h1>
-        <p id="Community_para">this project by a community that Foucuses about competing with closed-source corporate software that cannot be trusted </p>
+        <p id="Community_para" class="p63" >this project by a community that Foucuses about competing with closed-source corporate software that cannot be trusted </p>
     </section>
 
 
@@ -366,55 +365,20 @@ ul li:hover {
 
 
     <section>
-        <h1 class="Title_of_para" id="Contribution">contribute for better FOSS <span class="material-symbols-outlined">
+        <h1 class="Title_of_para tit4" id="Contribution">contribute for better FOSS <span class="material-symbols-outlined">
             waving_hand
             </span></h1>
-        <p id="Contribution_para">you can contribute by writing code, reporting bugs, donating to any FOSS contribiouters , we unfortunatly dont accept any kind of currency</p>
+        <p id="Contribution_para" class="p64"> We're always looking for contributors to help improve Polan and make it even better. Join us on GitHub and start contributing today! </p>
     </section>
-   
-<section>
-  <div class="langs">
-    
-    <a class="a1 active" href="#" Language="English">ENG</a>
-
-    <a class="a1" href="#" Language="Turkish">TR</a>
-    <a class="a1" href="#" Language="Arabic">AR</a>
-
-
-  </div>
-</section>
-      <!--Empty-->
-    <Section>
-      <footer>
-  <p>visit the repo :)<br></p>
-<div>
-  <div class="child">
-<p><li><a href="https://github.com/P0LAN/polan"><i class="fa fa-github"></i></a></p>
-</div>
-</div>
-</footer>
-    </Section>
 
     <script>
-      function toggleMobileMenu(menu) {
-        menu.classList.toggle('open');
-    }
-    
-    </script>
-    <script>
-      ver="1.2.0"
-      console.log("languages Models are still in progress!!")
-      console.log("Website ver="+ver)
-      ///language selector is still in progress!!!!
-      ///dont move or change the snippets!
-    /////  let lang = document.querySelector(".langs"),
-    //  link = document.querySelectorAll("a1"),
-      ///let data = {
-     
-       // Arabic: {
-       //   Title_of_para: "تيست يولد",
-      //  }
-//}
+
+      function toggleMobileMenu(icon) {
+        icon.classList.toggle("open");
+        var mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenu.classList.toggle("open");
+      }
+      
     </script>
 
 </body>
